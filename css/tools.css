@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.exit-button{
+    position: absolute;
+    top: 8vh;
+    left: 10vw;
+    z-index: 100000;
+}
+.exit-button i{
+    font-size: 5vh;
+    display: none;
+}
+.menu{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000000;
+    background: #0f0f0f;
+}
+.tools{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50vw;
+}
+.tool-container{
+    position: relative;
+    width: 20vw;
+    height: 25vh;
+    margin: 2.5vh;
+    border-radius: 1.5vh;
+    box-shadow: inset 0px 0px 56px -21px rgba(0,0,0,1)
+}
+.tool-container h1{
+    position: absolute;
+    color: #0f0f0f;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vh;
+    pointer-events: none;
+}
+#box-shadow{
+  background-image: url('../img/tools/shadow-box.png');
+  background-size: contain;
+}
+/* Shadow box */
+.shadow-box{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+.display-box{
+    position: absolute;
+    top: 32.5vh;
+    left: 60vw;
+    height: 30vh;
+    width: 25vw;
+    background: brown;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: snow;
+    font-size: 2vh;
+}
+.display-box p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: gray;
+    padding: 1vh;
+}
+.containers{
+    position: absolute;
+    left: 20vw;
+}
+.slidecontainer{
+    width: 20vw;
+    margin-top: 3vh;
+}
+.slidecontainer p{
+    font-size: 2.5vh;
+}
+.container-flex{
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.container-flex h1{
+    font-size: 2vh;
+    margin-top: 1vh;
+}
+.color-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#color{
+  height: 2vh;
+}
+#color-picker-hexinput{
+  margin-left: 2vw;
+  height: 2vh;
+  padding: 0.5vh;
+}
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 1vh;
+    margin-top: 2vh; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: gray; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider-switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider-switch:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider-switch {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider-switch {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider-switch:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider-switch {
+    border-radius: 34px;
+  }
+  
+  .slider-switch:before {
+    border-radius: 50%;
+  }

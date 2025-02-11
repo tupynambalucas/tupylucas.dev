@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 545.2 315.68">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ad37c8;
+      }
+    </style>
+  </defs>
+  <g id="WORK">
+    <g>
+      <g>
+        <g>
+          <polygon class="cls-1" points="418.11 157.4 337.07 238.44 375.43 276.8 494.83 157.4 376.31 38.88 337.95 77.24 418.11 157.4"/>
+          <rect class="cls-1" x="480.07" y="79.64" width="53.95" height="53.95" transform="translate(790.2 540.54) rotate(-135)"/>
+        </g>
+        <g>
+          <polygon class="cls-1" points="127.09 158.28 208.13 77.24 169.76 38.88 50.36 158.28 168.89 276.8 207.25 238.44 127.09 158.28"/>
+          <rect class="cls-1" x="11.17" y="182.09" width="53.95" height="53.95" transform="translate(159.01 34.26) rotate(45)"/>
+        </g>
+      </g>
+      <rect class="cls-1" x="259.13" y="-3.29" width="26.94" height="322.27" transform="translate(59.33 -73.98) rotate(17.32)"/>
+    </g>
+  </g>
+</svg>

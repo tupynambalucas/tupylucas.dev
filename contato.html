@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tupy | Contato</title>
+    
+    <!-- Fontes -->
+    <link rel="stylesheet" href="https://use.typekit.net/wbm2uhg.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+    <div class="stitch" id="stitch"></div>
+    <div class="contato">
+        <h1 class="montserrat-bold">Contato</h1>
+        <form>
+            <input id="Email" class="montserrat-bold" type="email" placeholder="Email">
+            <textarea id="Necessidade" class="montserrat-bold" type="text" placeholder="Necessidade"></textarea>
+            <button id="submit" class="montserrat-bold">Enviar</button>
+        </form>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/stitch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.20/autosize.js" integrity="sha512-IPqIv5PLMZsJgrFwpmEdO4Lj3GtgO3JOG4dI8Sc20pKj5YIRbE1Y5nPuT0UrtsV4h+oSey5jBCnkRHkO/73ujA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let Email = document.getElementById('Email')
+        let Necessidade = document.getElementById('Necessidade')
+        Necessidade.addEventListener('focus', function(){
+            autosize(Necessidade);
+        });
+
+        let submit = document.getElementById('submit')
+        submit.addEventListener('click', (e) => {
+            axios.post('/contato/enviar', {
+                Email: Email.value,
+                Necessidade: Necessidade.value
+            })
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+            e.preventDefault()
+        })
+    </script>
+</body>
+</html>

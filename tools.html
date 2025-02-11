@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    <!-- Fontes -->
+    <link rel="stylesheet" href="https://use.typekit.net/wbm2uhg.css">
+    
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- Css -->
+    <link rel="stylesheet" href="css/tools.css">
+</head>
+<body>
+    <div class="exit-button">
+        <i id="exit-button" class="fa-solid fa-arrow-left"></i>
+    </div>
+    <div id="menu" class="menu">
+        <div id="menu-tools" class="tools">
+            <div class="tool-container" name="box-shadow" id="box-shadow">
+                <h1>Box Shadow</h1>
+            </div>
+            <div class="tool-container">
+                
+            </div>
+            <div class="tool-container">
+                
+            </div>
+            <div class="tool-container">
+                
+            </div>
+        </div>
+    </div>
+    <div id="shadow-box" class="shadow-box">
+        <div id="display-box" class="display-box">
+            <p id="display-code">box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2)</p>
+        </div>
+        <div class="containers">
+            <div class="slidecontainer">
+                <div class="container-flex">
+                    <h1>Inset</h1>
+                </div>
+                <label class="switch">
+                    <input id="inset-check" value="1" type="checkbox">
+                    <span class="slider-switch"></span>
+                </label>  
+            </div>
+            <div class="slidecontainer">
+                <p id="horizontal-output">0</p>
+                <div class="container-flex">
+                    <h1>Comprimento Horizontal</h1>
+                </div>
+                <input type="range" min="-200" max="200" value="0" class="slider" id="horizontal-bar">
+            </div>
+            <div class="slidecontainer">
+                <p id="vertical-output">0</p>
+                <div class="container-flex">
+                    <h1>Comprimento Vertical</h1>
+                </div>
+                <input type="range" min="-200" max="200" value="0" class="slider" id="vertical-bar">
+            </div>
+            <div class="slidecontainer">
+                <p id="blur-output">0</p>
+                <div class="container-flex">
+                    <h1>Raio do Blur</h1>
+                </div>
+                <input type="range" min="0" max="300" value="0" class="slider" id="blur-bar">
+            </div>
+            <div class="slidecontainer">
+                <p id="spread-output">0</p>
+                <div class="container-flex">
+                    <h1>Raio de Propagação</h1>
+                </div>
+                <input type="range" min="-200" max="200" value="0" class="slider" id="spread-bar">
+            </div>
+            <div class="slidecontainer">
+                <div class="color-flex">
+                    <input type="color" id="color-picker"/>
+                    <input type="text" id="color-picker-hexinput" placeholder="#0f0f0f">
+                </div>
+            </div>
+            <div class="slidecontainer">
+                <p id="opacity-output">0</p>
+                <div class="container-flex">
+                    <h1>Opacidade</h1>
+                </div>
+                <input type="range" min="0" max="1" step="0.01" value="0.20" class="slider" id="opacity-bar">
+            </div>
+        </div>
+    </div>
+    <script src="js/tools.js"></script>
+</body>
+</html>

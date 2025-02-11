@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Desenvolvedor full stack. Criação de sites, aplicações web, mobile e desktop.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, FullStack, Desenvolvedor, NodeJs, Docker,Python,MongoDB,Express,GoogleCloud,React,Web3,3dweb,3d,3D,threejs,jogos,3d para jogos, criação de sites,sites,criação de aplicativos,desenvolvimento de sistemas,sistemas,criação de sistemas, e-commerce, criação de e-commerce,criação de blog">
+    <meta name="robots" content="noindex"/>
+    <meta name="googlebot" content="noindex">
+    <meta name="author" content="Tupynambá Lucas">
+    <title>Tupynambá Lucas</title>
+    <!-- Fontes -->
+    <link rel="stylesheet" href="https://use.typekit.net/wbm2uhg.css">
+   
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Js -->
+    <script src="./lib/rellax.min.js"></script>
+    <script src="./lib/aos.js"></script>
+    <script defer src="./lib/all.js"></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/index.css">
+    <link href="./lib/aos.css" rel="stylesheet">
+
+    <!-- PIXI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.1/browser/pixi.js" integrity="sha512-/Q7zw+BYCs3qyb7ZTzoZn9DB63zuDMGaQjz3BV6Ug6cbtY2cLFon1/rgP4SadB8zFx6yseAymKymn+McinbwJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- MidnightJs -->
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@1.11,npm/midnight.js@1.1"></script>
+    <script>
+        // Start midnight
+        $(document).ready(function(){
+          // Change this to the correct selector.
+          $('nav.fixed').midnight();
+        });
+    </script>
+
+    <!-- Loading -->
+    <script src="js/loading.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="lib/animate.js"></script>
+
+</head>
+<body class="no-scroll">
+    <!-- Advice -->
+     <div class="advice">
+        <h1>Aceleração de hardware é necessária nesta página!</h1>
+        <p>Pesquise como ativar para  navegador</p>
+     </div>
+    <!-- Loading -->
+    <div id="loading" class="loading">
+        <div class="loading-container">
+            <img class="animate__animated animate__bounce animate__infinite" src="logo.png" alt="">
+            <p class="montserrat-bold">tupynambalucas.dev</p>
+        </div>
+    </div>
+    <!------------->
+    <div class="control3d">
+        <span class="montserrat-bo">Desativar 3D<input type="checkbox" id="control3d"></span>
+    </div>
+    <!-- Navbar -->
+    <nav class="fixed">
+        <div class="midnightHeader default">
+            <img src="img/logos/logo-yellow.svg" alt="">
+            <h1 class="montserrat-bold">Tupynambá Lucas</h1>
+            <div class="nav">
+                <!-- <a href="" class="montserrat-regular">Home</a> -->
+                <a href="https://github.com/tupynambalucas" target=”_blank” class="montserrat-regular">Github</a>
+                <a href="/contato" class="montserrat-regular">Contato</a>
+            </div>
+        </div>
+        <div class="midnightHeader branco">
+            <img src="img/logos/logo-onyx.svg" alt="">
+            <h1 class="montserrat-bold">Tupynambá Lucas</h1>
+            <div class="nav">
+                <!-- <a href="" class="montserrat-regular">Home</a> -->
+                <a href="https://github.com/tupynambalucas" target=”_blank” class="montserrat-regular">Github</a>
+                <a href="/contato" class="montserrat-regular">Contato</a>
+            </div>
+        </div>
+        <div class="midnightHeader transparente">
+            <img src="img/logos/logo-pink.svg" alt="">
+            <h1 class="montserrat-bold">Tupynambá Lucas</h1>
+            <div class="nav">
+                <!-- <a href="" class="montserrat-regular">Home</a> -->
+                <a href="https://github.com/tupynambalucas" target=”_blank” class="montserrat-regular">Github</a>
+                <a href="/contato" class="montserrat-regular">Contato</a>
+            </div>
+        </div>
+    </nav>
+    <!------------>
+
+    <!-- Land -->
+    <section class="sec-1">
+        <div class="container-texto" data-rellax-speed="-4">
+            <h1 class="sempre">
+                <span>sempre</span>
+                <div class="message">
+                  <div class="word1">codificando</div>
+                  <div class="word2">perto</div>
+                  <div class="word3">criando</div>
+                </div>
+            </h1>
+            <p id="paragrafo" class="montserrat-regular"><span style="color: #BD1DCF;">Desenvolvedor full stack.</span> Criação de sites, aplicações web, mobile e desktop.</p>
+        </div>
+        <img class="floating" src="img/her.png" alt="">
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use style="opacity: 0.4;" xlink:href="#gentle-wave" x="48" y="0" fill="#BD1DCF" />
+            <use style="opacity: 0.8;" xlink:href="#gentle-wave" x="48" y="3" fill="0f0f0f" />
+            <use style="opacity: 0.5;" xlink:href="#gentle-wave" x="48" y="5" fill="0f0f0f" />
+            <use style="opacity: 1;" xlink:href="#gentle-wave" x="48" y="7" fill="0f0f0f" />
+            </g>
+            </svg>
+        </div>
+    </section>
+    <!----------->
+
+    <!-- Sec 2 -->
+    <section class="sec-2" data-midnight="branco">
+        <div class="flex-sobre">
+            <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="flex-item">
+                <h1 class="montserrat-bold">Sobre mim</h1>
+                <p class="montserrat-regular">Sou um desenvolvedor fullstack multidisciplinar e criativo. Crio experiências incríveis na web com aplicações de e-commerce, eventos e muito mais, trazendo modelos 3D para a web com three.js e serviços backend com node.js, entre outros.</p>
+                <p class="montserrat-regular">Também desenvolvo automações com crawlers e bots para diversas necessidades, trazendo agilidade e praticidade para os seus processos.</p>
+            </div>
+        </div>
+    </section>
+    <!--------->
+
+    <!-- Seção 3 -->
+    <section class="sec-3">
+
+        <!-- Serviços -->
+            <div class="servicos" data-midnight="default">
+                <div class="faca-comigo">
+                    <h1 class="servicos-titulo montserrat-bold" data-rellax-speed="1">Faça comigo os melhores</h1>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                        <div id="slide1" class="swiper-slide">
+                            <h1 class="montserrat-bold">Sites</h1>
+                        </div>
+                        <div id="slide2" class="swiper-slide">
+                            <h1 class="montserrat-bold">Apps</h1>
+                        </div>
+                        <div id="slide3" class="swiper-slide">
+                            <h1 class="montserrat-bold">Bots</h1>
+                        </div>
+                        <div id="slide4" class="swiper-slide">
+                            <h1 class="montserrat-bold">3D</h1>
+                        </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="desenvolvimento" data-midnight="branco">
+                    <div class="desenvolvimento-flex">
+                        <div id="desenvolvimento-2" data-rellax-speed="-3" data-rellax-zindex="-1" class="desenvolvimento-flex-item">
+                            <div class="desenvolvimento-conteudo">
+                                <h1 class="montserrat-bold">Node.Js</h1>
+                                <p class="montserrat-regular">Minha especialidade é o Node, crio Aplicações complexas e dinamicas seja qual for a sua necessidade. </p>
+                            </div>
+                            <img id="imac" src="./img/imac.png">                        
+                        </div>
+                        <div id="desenvolvimento-1" class="desenvolvimento-flex-item">
+                            <div class="habilidades">
+                                <h1 class="montserrat-bold">Desenvolvimento</h1>
+                                <div class="habilidades-flex">
+                                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="habilidade">
+                                        <img src="img/habilidades/cloud.png" alt="">
+                                        <p class="montserrat-regular">Google Cloud</p>
+                                    </div>
+                                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="habilidade">
+                                        <img src="img/habilidades/css.png" alt="">
+                                        <p class="montserrat-regular">CSS</p>
+                                    </div>
+                                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="habilidade">
+                                        <img src="img/habilidades/express.png" alt="">
+                                        <p class="montserrat-regular">Express</p>
+                                    </div>
+                                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="habilidade">
+                                        <img src="img/habilidades/html.png" alt="">
+                                        <p class="montserrat-regular">HTML</p>
+                                    </div>
+                                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="habilidade">
+                                        <img src="img/habilidades/javascript.png" alt="">
+                                        <p class="montserrat-regular">Javascript</p>
+                                    </div>
+                                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="habilidade">
+                                        <img src="img/habilidades/kube.png" alt="">
+                                        <p class="montserrat-regular">Kubernetes</p>
+                                    </div>
+                                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" class="habilidade">
+                                        <img src="img/habilidades/mongo.png" alt="">
+                                        <p class="montserrat-regular">MongoDB</p>
+                                    </div>
+                                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="habilidade">
+                                        <img src="img/habilidades/node.png" alt="">
+                                        <p class="montserrat-regular">NodeJs</p>
+                                    </div>
+                                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900" class="habilidade">
+                                        <img src="img/habilidades/pip.png" alt="">
+                                        <p class="montserrat-regular">Python</p>
+                                    </div>
+                                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" class="habilidade">
+                                        <img src="img/habilidades/react.png" alt="">
+                                        <p class="montserrat-regular">React</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------->
+
+        <!-- Design -->
+        <div class="design-box">
+            <div class="dope" id="dope"></div>
+            <div class="design">
+                <h1 class="montserrat-bold">Design</h1>
+                <div class="design-flex">
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="habilidade">
+                        <img src="img/design/ae.png" alt="">
+                        <p class="montserrat-regular">After Effects</p>
+                    </div>
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="habilidade">
+                        <img src="img/design/ai.png" alt="">
+                        <p class="montserrat-regular">Illustrator</p>
+                    </div>
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="habilidade">
+                        <img src="img/design/dn.png" alt="">
+                        <p class="montserrat-regular">Dimension</p>
+                    </div>
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="habilidade">
+                        <img src="img/design/id.png" alt="">
+                        <p class="montserrat-regular">InDesign</p>
+                    </div>
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="habilidade">
+                        <img src="img/design/ps.png" alt="">
+                        <p class="montserrat-regular">Photoshop</p>
+                    </div>
+                    <div data-aos-anchor-placement="top-bottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="habilidade">
+                        <img src="img/design/xd.png" alt="">
+                        <p class="montserrat-regular">Adobe XD</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Robot -->
+    <div id="amy" class="amy" data-midnight="branco">
+        <div class="amy-conteudo" data-rellax-speed="2">
+            <h1 class="montserrat-bold">three.js</h1>
+            <p class="montserrat-regular">Crio belas experiências 3D na Web com three.ss</p>
+        </div>
+    </div>
+
+    <!-- Wizard -->
+    <div class="wizard" id="wizard">
+        <div class="wizard-conteudo" data-rellax-speed="2">
+            <h1 class="montserrat-bold">Seu jogo na Web.</h1>
+            <p class="montserrat-regular">Traga seus personagens para seu site.</p>
+        </div>
+    </div>
+    </section>
+    <!--------------->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-item">
+                <h1 class="montserrat-bold footer-titulo">tupynambalucas.dev</h1>
+            </div>
+            <div class="footer-item footer-contato">
+                <h1 class="montserrat-bold">Contato</h1>
+                <hr>
+                <a class="montserrat-regular">tupynambalucas@gmail.com</a>
+                <a class="montserrat-regular" href="https://wa.me/+5548996625754" target="_blank">Whatsapp</a>
+                <a class="montserrat-regular" href="https://t.me/Tupyo" target="_blank">Telegram</a>
+
+            </div>
+            <div class="footer-item footer-agradecimento">
+                <h1 class="montserrat-bold">Agradecimentos</h1>
+                <hr>
+                <a class="montserrat-regular" href="https://sketchfab.com/chrisleeX" target="_blank">@ChrisLee</a>
+                <a class="montserrat-regular" href="https://sketchfab.com/Kensyouen" target="_blank">@腱鞘炎の人</a>
+                <a class="montserrat-regular" href="https://sketchfab.com/Hadrien59" target="_blank">@Hadrien</a>
+            </div>
+            <div class="footer-item">
+                <img src="logo.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/nico-nico.js" type="module"></script>
+    <script type="module" src="./js/dope.js"></script>
+    <script type="module" src="./js/wizard.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            grabCursor: true,
+        effect: "creative",
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        },
+      });
+    </script>
+    <script>
+        var checkbox = document.getElementById('control3d')
+
+        checkbox.addEventListener('change', function() {
+        if (this.checked) {
+            scene1.remove(object1)
+        } else {
+            console.log("Checkbox is not checked..");
+        }
+        });
+    </script>
+</body>
+</html>
